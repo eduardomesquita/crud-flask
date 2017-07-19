@@ -26,7 +26,7 @@ def add_pessoa():
     pessoa.load_json(post_dict);
     
     conn.save(pessoa)
-    return 'database created successful', 200
+    return 'ok', 200
     
 
 @app.route('/crud/search/id',  methods=['GET'])
