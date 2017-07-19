@@ -25,9 +25,6 @@ class MysqlConnection(object):
         '''.format(pessoa.id, pessoa.nome, pessoa.sobrenome, 
                    pessoa.idade, pessoa.endereco.id)
         
-        print sql_pessoa
-        print sql_endereco
-        
         self._execute(sql_endereco)
         self._execute(sql_pessoa)
 
